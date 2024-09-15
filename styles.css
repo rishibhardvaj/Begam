@@ -1,0 +1,161 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f3f4f6;
+}
+
+/* Header Styles */
+header {
+    background-color: #ff6f61; /* Background color */
+    color: #fff; /* Text color */
+    text-align: center;
+    padding: 15px 0; /* Reduced padding */
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+header h1 {
+    font-family: 'Brush Script MT', cursive; /* Elegant font for header */
+    font-size: 2em; /* Adjusted font size */
+    margin: 0;
+}
+
+/* Main Content Styles */
+.container {
+    padding: 70px 10px 10px; /* Adjust padding for header space */
+}
+
+/* Timer Styles */
+#timer {
+    text-align: center;
+    font-size: 1.5em; /* Adjusted font size */
+    margin: 10px 0; /* Reduced margin */
+}
+
+/* Photo Gallery Styles */
+#photo-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px; /* Reduced gap */
+    margin-bottom: 10px; /* Reduced margin */
+}
+
+#photo-gallery img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px; /* Reduced border radius */
+    box-shadow: 0 3px 6px rgba(0,0,0,0.2); /* Reduced shadow */
+    cursor: pointer;
+}
+
+#photo-gallery img:hover {
+    transform: scale(1.03); /* Reduced scale */
+    transition: transform 0.3s ease;
+}
+
+/* Playlist Section Styles */
+#playlist {
+    text-align: center;
+    margin: 10px 0; /* Reduced margin */
+}
+
+#playlist iframe {
+    width: 100%;
+    max-width: 100%; /* Ensures full width on small screens */
+    height: 250px; /* Adjusted height */
+    border: none;
+    border-radius: 8px; /* Reduced border radius */
+    box-shadow: 0 3px 6px rgba(0,0,0,0.2); /* Reduced shadow */
+}
+
+/* Video Section Styles */
+#video {
+    text-align: center;
+    margin: 10px 0; /* Reduced margin */
+}
+
+#video iframe {
+    width: 100%;
+    max-width: 100%; /* Ensures full width on small screens */
+    height: 220px; /* Adjusted height */
+    border: none;
+    border-radius: 8px; /* Reduced border radius */
+    box-shadow: 0 3px 6px rgba(0,0,0,0.2); /* Reduced shadow */
+}
+
+/* Memories Section Styles */
+#memories {
+    text-align: center;
+    margin: 10px 0; /* Reduced margin */
+}
+
+#memories p {
+    font-size: 1em; /* Adjusted font size */
+    line-height: 1.4; /* Adjusted line height */
+}
+
+/* Surprise Section Styles */
+#surprise-section {
+    text-align: center;
+    margin: 10px 0; /* Reduced margin */
+}
+
+#download-link {
+    display: inline-block;
+    padding: 8px 16px; /* Reduced padding */
+    font-size: 1em; /* Adjusted font size */
+    color: #fff;
+    background-color: #ff6f61; /* Button color */
+    border-radius: 5px;
+    text-decoration: none;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.2); /* Reduced shadow */
+    transition: background-color 0.3s ease;
+}
+
+#download-link:hover {
+    background-color: #e65c50; /* Darker shade on hover */
+}
+
+/* Heart Animation Styles */
+.heart {
+    position: absolute;
+    top: 15%; /* Adjusted position */
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2.5em; /* Adjusted font size */
+    color: #ff6f61;
+    animation: float 3s infinite ease-in-out;
+}
+
+@keyframes float {
+    0% {
+        transform: translate(-50%, -50%) scale(1);
+    }
+    50% {
+        transform: translate(-50%, -60%) scale(1.2);
+    }
+    100% {
+        transform: translate(-50%, -50%) scale(1);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+
+
+    #photo-gallery img {
+        width: 100%;
+        max-width: none;
+    }
+    
+    #playlist iframe,
+    #video iframe {
+        height: 180px; /* Reduced height for smaller screens */
+    }
+}
